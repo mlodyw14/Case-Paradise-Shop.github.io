@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Case Paradise Shop</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      background: radial-gradient(circle at top, #1a0033, #000000);
+      color: white;
+    }
+
+    header {
+      background: linear-gradient(90deg, #ff00cc, #3333ff);
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      box-shadow: 0 0 20px #ff00cc;
+    }
+
+    /* MENU */
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #111;
+      padding: 10px;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: #ff00cc;
+    }
+
+    .section {
+      padding: 30px;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      background: #1a1a1a;
+      margin: 15px;
+      padding: 20px;
+      width: 300px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px #000;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #ff00cc;
+    }
+
+    .price {
+      background: #0a0a0a;
+      margin: 8px 0;
+      padding: 8px;
+      border-radius: 8px;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px;
+      width: 100%;
+      border: none;
+      border-radius: 10px;
+      background: linear-gradient(90deg, #ff00cc, #3333ff);
+      color: white;
+      cursor: pointer;
+    }
+
+    /* DISCORD BUTTON */
+    .discord-box {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .discord-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #5865F2;
+      padding: 12px 20px;
+      border-radius: 12px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .discord-btn:hover {
+      background: #4752c4;
+      transform: scale(1.05);
+    }
+
+    .discord-logo {
+      font-size: 24px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  💎 CASE PARADISE SHOP 💎
+</header>
+
+<!-- MENU -->
+<nav>
+  <a href="#titan">💠 Titan</a>
+  <a href="#event">🎉 Eventy</a>
+  <a href="#kontakt">📩 Kontakt</a>
+</nav>
+
+<!-- TITAN -->
+<div class="section" id="titan">
+  <h2>💠 TITAN HOLO 2014</h2>
+
+  <div class="container">
+    <div class="card">
+      <p>💲 Wartość: 140k</p>
+
+      <div class="price">🧩 Jeden — 5 zł</div>
+      <div class="price">📦 Min. 3 — 4 zł</div>
+      <div class="price">🔥 Min. 5 — 3,50 zł</div>
+      <div class="price">🚀 +10 — 3 zł</div>
+      <div class="price">💎 +25 — 2,50 zł</div>
+
+      <button>💰 Kup teraz</button>
+    </div>
+  </div>
+</div>
+
+<!-- EVENTY -->
+<div class="section" id="event">
+  <h2>🎉 Skiny Eventowe</h2>
+
+  <div class="container">
+    <div class="card">
+      <div class="price">🎁 Jeden — 20 zł</div>
+      <div class="price">📦 Min. 3 — 15 zł</div>
+
+      <button>💰 Kup teraz</button>
+    </div>
+  </div>
+</div>
+
+<!-- DISCORD -->
+<div class="section" id="kontakt">
+  <h2>📩 Kontakt</h2>
+
+  <div class="discord-box">
+    <a class="discord-btn" href="https://discord.gg/dfGEMSat" target="_blank">
+      <span class="discord-logo">💬</span>
+      Dołącz do Discorda
+    </a>
+  </div>
+</div>
+
+</body>
+</html>
