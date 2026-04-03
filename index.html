@@ -3,7 +3,14 @@
 <head>
   <title>Case Paradise Shop</title>
 
+  <!-- IKONKA W ZAKŁADCE -->
+  <link rel="icon" type="image/png" href="logo.png">
+
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       font-family: Arial;
@@ -20,7 +27,14 @@
       box-shadow: 0 0 20px #ff00cc;
     }
 
-    /* MENU */
+    /* LOGO */
+    .logo {
+      width: 90px;
+      margin-bottom: 10px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #000;
+    }
+
     nav {
       display: flex;
       justify-content: center;
@@ -83,9 +97,13 @@
       background: linear-gradient(90deg, #ff00cc, #3333ff);
       color: white;
       cursor: pointer;
+      font-weight: bold;
     }
 
-    /* DISCORD BUTTON */
+    button:hover {
+      background: linear-gradient(90deg, #00ffff, #ff00cc);
+    }
+
     .discord-box {
       margin-top: 40px;
       text-align: center;
@@ -109,8 +127,8 @@
       transform: scale(1.05);
     }
 
-    .discord-logo {
-      font-size: 24px;
+    .discord-btn img {
+      width: 24px;
     }
 
   </style>
@@ -119,17 +137,16 @@
 <body>
 
 <header>
+  <img src="logo.png" class="logo">
   💎 CASE PARADISE SHOP 💎
 </header>
 
-<!-- MENU -->
 <nav>
   <a href="#titan">💠 Titan</a>
   <a href="#event">🎉 Eventy</a>
   <a href="#kontakt">📩 Kontakt</a>
 </nav>
 
-<!-- TITAN -->
 <div class="section" id="titan">
   <h2>💠 TITAN HOLO 2014</h2>
 
@@ -143,12 +160,13 @@
       <div class="price">🚀 +10 — 3 zł</div>
       <div class="price">💎 +25 — 2,50 zł</div>
 
-      <button>💰 Kup teraz</button>
+      <a href="https://discord.gg/4xDpVktt" target="_blank">
+        <button>💰 Kup teraz</button>
+      </a>
     </div>
   </div>
 </div>
 
-<!-- EVENTY -->
 <div class="section" id="event">
   <h2>🎉 Skiny Eventowe</h2>
 
@@ -157,18 +175,19 @@
       <div class="price">🎁 Jeden — 20 zł</div>
       <div class="price">📦 Min. 3 — 15 zł</div>
 
-      <button>💰 Kup teraz</button>
+      <a href="https://discord.gg/4xDpVktt" target="_blank">
+        <button>💰 Kup teraz</button>
+      </a>
     </div>
   </div>
 </div>
 
-<!-- DISCORD -->
 <div class="section" id="kontakt">
   <h2>📩 Kontakt</h2>
 
   <div class="discord-box">
-    <a class="discord-btn" href="https://discord.gg/tCmKnWbC" target="_blank">
-      <span class="discord-logo">💬</span>
+    <a class="discord-btn" href="https://discord.gg/4xDpVktt" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png">
       Dołącz do Discorda
     </a>
   </div>
@@ -176,9 +195,3 @@
 
 </body>
 </html>
-<head>
-  <title>Case Paradise Shop</title>
-
-  <link rel="icon" type="image/png" href="76e91850-e8b7-431e-a6cb-87c8cd470893.png">
-
-  <style>
